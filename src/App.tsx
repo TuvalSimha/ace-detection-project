@@ -7,7 +7,7 @@ function App() {
     <div className='flex flex-col w-full h-screen justify-between'>
       <header className="bg-black text-white py-4 px-6 flex flex-row justify-between">
         <h1 className="text-2xl font-bold">Face Detection App</h1>
-        <a href="" target="_blank" rel="noreferrer">
+        <a href="https://github.com/TuvalSimha/face-detection-project" target="_blank" rel="noreferrer">
           <GitHubLogoIcon className="w-6 h-6 text-white" />
         </a>
       </header>
