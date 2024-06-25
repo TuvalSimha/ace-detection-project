@@ -1,9 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react';
 import Webcam from 'react-webcam';
 import * as faceapi from 'face-api.js';
-import { getTheHighestExpression } from '@/lib/get-the-highest-expression';
-import { getTheHighestScore } from '@/lib/get-the-highest-score';
-import { loadModels } from '@/lib/load-models';
+import { getTheHighestExpression } from '../lib/get-the-highest-expression';
+import { getTheHighestScore } from '../lib/get-the-highest-score';
+import { loadModels } from '../lib/load-models';
 
 interface Detection {
     age: number;
