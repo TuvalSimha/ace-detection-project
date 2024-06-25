@@ -1,30 +1,39 @@
-# React + TypeScript + Vite
+# Face Detection with `face-api.js` and `react-webcam`
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project demonstrates real-time face detection using `face-api.js` and `react-webcam`.
 
-Currently, two official plugins are available:
+## Technologies Used:
+- **React**: Frontend framework for building user interfaces.
+- **face-api.js**: JavaScript API for face detection, face recognition, and more.
+- **react-webcam**: React component for accessing the webcam.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+## Setup Instructions:
+**Clone the Repository:**
+```
+git clone https://github.com/TuvalSimha/face-detection-project.git
+cd face-detection-react-webcam
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+**Install Dependencies:**
+
+```
+Copy code
+pnpm install
+```
+**Run the Application:**
+
+```
+pnpm dev
+```
+This will start the development server and open the application in your default web browser.
+
+## Usage:
+When the application loads, it accesses your webcam using react-webcam.
+The face-api.js library is used to detect faces in real-time.
+Detected face attributes such as age, gender, and facial expressions are displayed.
+Expressions score and the highest expression are calculated and shown.
+
+## Features:
+- Real-time face detection using the webcam.
+- Displaying age, gender, and facial expressions of the detected face.
+- Calculating and displaying the highest expression and its score.
