@@ -5,16 +5,10 @@ export function getTheHighestScore(expression: faceapi.FaceExpressions | null | 
         return 'Thinking...';
     }
 
-    let highestExpression: string = '';
-    let highestValue: number = 0;
-
-    Object.entries(expression).forEach(([key, value]) => {
-        if (typeof value === 'number' && value > highestValue) {
-            highestValue = value;
-            highestExpression = key;
+    for (const [_key, value] of Object.entries(expression)) {
+        if (typeof value === 'number') {
+            return parseFloat(value.toFixed(5));
         }
-    });
-
-    const parseFloatValue = parseFloat(highestValue.toFixed(5));
-    return parseFloatValue;
+    }
+    return 'Thinking...';
 }
