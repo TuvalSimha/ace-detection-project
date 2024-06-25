@@ -5,7 +5,6 @@ export function getTheHighestScore(expression: faceapi.FaceExpressions | null | 
         return 'Thinking...';
     }
 
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     let highestExpression: string = '';
     let highestValue: number = 0;
 
